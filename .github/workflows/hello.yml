@@ -20,3 +20,8 @@ jobs:
       - name: Show pwd
         run: pwd
 
+      - name: Show Files
+        run: ls -la
+     
+      - name: Recursive List
+        run: find .
