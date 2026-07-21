@@ -8,20 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello
-        run: echo "Hello GitHub Actions!"
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Show Date
-        run: date
-
-      - name: Show Python Version
-        run: python3 --version
-
-      - name: Show pwd
+      - name: Show Current Directory
         run: pwd
 
       - name: Show Files
         run: ls -la
-     
-      - name: Recursive List
+
+      - name: Find Files
         run: find .
