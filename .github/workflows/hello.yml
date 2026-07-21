@@ -17,3 +17,6 @@ jobs:
       - name: Show Python Version
         run: python3 --version
 
+      - name: Show pwd
+        run: pwd
+
