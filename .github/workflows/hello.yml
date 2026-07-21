@@ -19,3 +19,9 @@ jobs:
 
       - name: Find Files
         run: find .
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check CSV
+        run: python3 scripts/check_csv.py
